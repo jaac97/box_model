@@ -28,28 +28,46 @@ body{
 .border_content{
     padding-right: 30px;
 }
-
-
-.margin{
-    width: 85%;
-    /* max-width: 1200px; */
-    height: 80%;
-    border: 1px dotted #b8b5b5;
+.margin, .padding, .content{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.margin_content, .padding{
+.margin{
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    right: 0;
+    top: 47%;
+
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+.margin,.content{
+    width: 85%;
+    height: 80%;
+    border: 1px dotted #a3a2a2;
+}
+.margin_content, .padding, .padding, .padding_content, .content, .content_content{
     align-self: flex-end;
     margin-right: 30px;
 }
 .margin_content{
     margin-top: 5px;
-
 }
 .padding{
     border: 5px solid #000;
     width: 90%;
     height: 80%;
-    margin-top: 10px;
+}
+.content{
+    width: 90%;
 }

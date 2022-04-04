@@ -1,0 +1,29 @@
+body, .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+body{
+    height: 100vh;
+    color: #fff;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    flex-direction: column;
+}
+.uno, .dos{
+    padding: 25px;
+    border: 10px solid black;
+}
+.uno{
+    background-color: crimson;
+
+}
+.dos{
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+
+}
